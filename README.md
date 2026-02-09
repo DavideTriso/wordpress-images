@@ -1,6 +1,6 @@
-# Docker Wordpress
+# Wordpress Images
 
-Image to run Wordpress in docker
+Images to run Wordpress in containers
 
 ## Quick reference
 
