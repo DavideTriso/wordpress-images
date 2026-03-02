@@ -14,7 +14,6 @@ E.g.:
 
 ```
 docker buildx build --push --tag davidetriso/wordpress:php-8.1-fpm --output type=image --platform linux/arm64,linux/amd64 ./php-8.1-fpm
-docker build -t davidetriso/wordpress:php-8.1-fpm ./php-8.1-fpm
 ```
 
 ### Push image to Docker Hub
