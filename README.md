@@ -7,12 +7,13 @@ Images to run Wordpress in containers
 ### Build the image
 
 ```
-docker build -t davidetriso/wordpress:[tagname-dir_name] ./[tagname-dir_name]
+docker buildx build --push --tag davidetriso/wordpress:[tagname-dir_name] --output type=image --platform linux/arm64,linux/amd64 ./[tagname-dir_name]
 ```
 
 E.g.:
 
 ```
+docker buildx build --push --tag davidetriso/wordpress:php-8.1-fpm --output type=image --platform linux/arm64,linux/amd64 ./php-8.1-fpm
 docker build -t davidetriso/wordpress:php-8.1-fpm ./php-8.1-fpm
 ```
 
