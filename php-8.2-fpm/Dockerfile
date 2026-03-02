@@ -8,6 +8,7 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
         && apk update \
         && apk add --update --no-cache \
             nano \
+            nnn \
         && install-php-extensions \
             apcu \
             memcached \
